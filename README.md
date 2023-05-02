@@ -11,6 +11,7 @@ Hello World.
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-aurl]
 
 
 
@@ -88,6 +89,8 @@ Project Link: [Pixel Pickle](https://github.com/McSpicyAss/Pixel-Pickle)
 [contributors-url]: https://github.com/McSpicyAss/Pixel-Pickle/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/harsh-nanda-85104b245
+[linkedin-aurl]: 
+https://www.linkedin.com/in/ainesh-nanda-696531274
 [Stable Diffusion]:https://stablediffusionweb.com/logo.png
 [Stable-Url]: https://stablediffusionweb.com/
 [python-notebook-shield]:https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png?20220821155029
