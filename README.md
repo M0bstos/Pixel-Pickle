@@ -64,7 +64,7 @@ This is an example of how you may give your prompts and generate your images
 
 Harsh Nanda - [@M0bstsos](https://twitter.com/M0bstos) - harshnanda57@gmail.com
 
-Ainesh Nanda - [@AineshN](https://twitter.com/AineshN) - ainesh@gmail.com
+Ainesh Nanda - [@AineshN](https://twitter.com/AineshN) - aineshnanda@gmail.com
 
 Project Link: [Pixel Pickle](https://github.com/McSpicyAss/Pixel-Pickle)
 
