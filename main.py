@@ -17,7 +17,7 @@ prompt = input("Enter prompt: ")
 payload = {
     "prompt": prompt,
     "n": 2,
-    "size": "1024x1024"
+    "size": "512x512"
 }
 
 response = requests.post(api_url, json=payload, headers=headers)
