@@ -3,11 +3,13 @@ from PIL import Image
 from io import BytesIO
 import os
 
+api_key = os.environ.get('OPENAI_API_KEY')
+
 api_url = "https://api.openai.com/v1/images/generations"
 
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": f"Bearer {api_key}"
 }
 
 prompt = input("Enter prompt: ")
