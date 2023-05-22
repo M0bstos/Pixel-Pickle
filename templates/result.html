@@ -47,7 +47,6 @@
       }
 
       .navbar .contact-us {
-        margin-left: auto;
         margin-right: 10px;
       }
 
@@ -71,27 +70,16 @@
         height: 214px;
         object-fit: cover;
       }
-
-      .goback-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #ffffff;
-        padding: 10px 20px;
-        color: #333333;
-        text-decoration: none;
-        border-radius: 4px;
-      }
     </style>
   </head>
   <body>
     <div class="navbar">
       <div class="logo">
-        Pixel Pickle
+        <a href="/" style="text-decoration: none; color: #ffffff;">Pixel Pickle</a>
       </div>
       <ul>
-        <li class="contact-us"><a href="/contact">Contact Us</a></li>
-        <li><a href="https://github.com/McSpicyAss/Pixel-Pickle" target="_blank">GitHub</a></li>
+        <li class="contact-us"><a href="/contact" style="text-decoration: none; color: #ffffff;">Contact Us</a></li>
+        <li><a href="https://github.com/McSpicyAss/Pixel-Pickle" target="_blank" style="text-decoration: none; color: #ffffff;">GitHub</a></li>
       </ul>
     </div>
 
@@ -102,12 +90,10 @@
         <img class="image" src="{{ image.url }}" alt="Generated Image">
         {% endfor %}
       </div>
-      <a class="goback-button" href="/">Go Back</a>
       {% endif %}
 
       {% if error_message %}
       <p style="color: #ff0000;">{{ error_message }}</p>
-      <a class="goback-button" href="/">Go Back</a>
       {% endif %}
     </div>
   </body>
