@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generated Images</title>
+    <style>
+      body {
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #4d4d4d;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        float: left;
+      }
+
+      .navbar li a {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover {
+        background-color: #333333;
+      }
+
+      .navbar .logo {
+        color: #ffffff;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: 10px;
+      }
+
+      .navbar .contact-us {
+        margin-left: auto;
+        margin-right: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 60px);
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-top: 20px;
+      }
+
+      .image {
+        width: 214px;
+        height: 214px;
+        object-fit: cover;
+      }
+
+      .goback-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        color: #333333;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        Pixel Pickle
+      </div>
+      <ul>
+        <li class="contact-us"><a href="/contact">Contact Us</a></li>
+        <li><a href="https://github.com/McSpicyAss/Pixel-Pickle" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      {% if images %}
+      <div class="image-grid">
+        {% for image in images %}
+        <img class="image" src="{{ image.url }}" alt="Generated Image">
+        {% endfor %}
+      </div>
+      <a class="goback-button" href="/">Go Back</a>
+      {% endif %}
+
+      {% if error_message %}
+      <p style="color: #ff0000;">{{ error_message }}</p>
+      <a class="goback-button" href="/">Go Back</a>
+      {% endif %}
+    </div>
+  </body>
+</html>
